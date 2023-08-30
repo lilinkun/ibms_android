@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/mainFragment"
+    android:id="@+id/nav"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.hncr.ibms.ui.main.MainFragment"
+        android:label="MainFragment">
+
+
+        <action
+            android:id="@+id/action_mainFragment_to_companyProfileFragment"
+            app:destination="@id/companyProfileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_floorNavigationFragment"
+            app:destination="@id/floorNavigationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_suggestionFragment"
+            app:destination="@id/suggestionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyProfileFragment"
+        android:name="com.hncr.ibms.ui.CompanyProfile.CompanyProfileFragment"
+        android:label="CompanyProfileFragment"
+        tools:layout="@layout/fragment_company_profile"/>
+    <fragment
+        android:id="@+id/floorNavigationFragment"
+        android:name="com.hncr.ibms.ui.floornavigation.FloorNavigationFragment"
+        android:label="FloorNavigationFragment" >
+        <action
+            android:id="@+id/action_floorNavigationFragment_to_floorPersonFragment"
+            app:destination="@id/floorPersonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/floorPersonFragment"
+        android:name="com.hncr.ibms.ui.FloorPerson.FloorPersonFragment"
+        android:label="FloorPersonFragment" >
+        <argument
+            android:name="pageTitle"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/suggestionFragment"
+        android:name="com.hncr.ibms.ui.suggestion.SuggestionFragment"
+        android:label="SuggestionFragment" />
+
+</navigation>

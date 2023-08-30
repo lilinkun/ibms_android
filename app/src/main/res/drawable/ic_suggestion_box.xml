@@ -1,0 +1,11 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle">
+    <gradient android:type="linear" android:useLevel="true" android:startColor="#ff530fc6" android:endColor="#ff8b17ff" android:angle="360" />
+    <corners android:radius="2dp" />
+    <item android:name="android:shadowColor"
+        tools:ignore="ExtraText">#12000000</item>
+    <item android:name="android:shadowDx">0</item>
+    <item android:name="android:shadowDy">10</item>
+</shape>

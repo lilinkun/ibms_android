@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_suggestion"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_back_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="19dp"
+                android:src="@drawable/ic_back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/back">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_suggesion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/suggestion_box"
+            />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_suggestion_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/tv_suggesion_name"
+        android:background="@drawable/bg_suggestion_h"
+        android:layout_toStartOf="@+id/ll_qrcode"
+        android:layout_above="@+id/tv_submit"
+        >
+
+        <EditText
+            android:id="@+id/et_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/input_content"
+            android:gravity="top"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qrcode"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/bg_suggestion_v"
+            android:gravity="center_horizontal"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/ll_suggestion_content"
+            android:layout_alignBottom="@+id/ll_suggestion_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp45"
+                android:layout_marginEnd="@dimen/dp45"
+                android:text="@string/input_qrcode"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/dp30"
+                android:src="@drawable/qrcode"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/ll_suggestion_content"
+            android:layout_marginBottom="135dp"
+            android:text="@string/submit"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/bg_suggestion_submit"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_submit"
+            android:layout_alignTop="@id/tv_submit"
+            android:layout_toStartOf="@id/tv_submit"
+            android:layout_marginEnd="20dp"
+            android:text="@string/cancel"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/bg_suggestion_cancel"
+            />
+
+    </RelativeLayout>
+
+</layout>

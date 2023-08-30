@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/main_browse_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainFragment"
+        tools:deviceIds="tv"
+        tools:ignore="MergeRootFrame" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_logo"
+            android:layout_margin="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_company_profile"
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:background="@drawable/ic_company_profile"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_company_profile"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_profile"
+                    android:layout_marginTop="19dp"
+                    />
+
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="2.5dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_floor_navigation"
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:background="@drawable/ic_floor_navigation"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_floor_navigation"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/floor_navigation"
+                    android:layout_marginTop="19dp"
+                    />
+
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="2.5dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_suggestion_box"
+                android:layout_width="170dp"
+                android:layout_height="140dp"
+                android:background="@drawable/ic_suggestion_box"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_suggestion_box"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suggestion_box"
+                    android:layout_marginTop="19dp"
+                    />
+
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="2.5dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</layout>
